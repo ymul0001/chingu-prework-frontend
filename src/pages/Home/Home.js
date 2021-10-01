@@ -1,5 +1,7 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 import axios from "axios";
+import Login from '../Login/Login';
 import Button from '../../components/Button/Button';
 import Input from '../../components/FormInput/Input';
 import TextArea from '../../components/TextArea/TextArea';
@@ -63,6 +65,12 @@ class Home extends React.Component {
     }
 
     render() { 
+        if (localStorage.getItem('userId') === null) {
+            return (
+                <Redirect to="/login" component={Login} />
+            )
+        }
+
         return (
             <div className="home-page">
                 <nav className="navigation">
