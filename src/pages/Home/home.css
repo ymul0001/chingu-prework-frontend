@@ -1,0 +1,255 @@
+.navigation {
+    background-color: black;
+    height: 8vh;
+    padding-top: 3vh;
+}
+
+.signout-btn {
+    background-color: #b02323;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    padding: 1.5vh;
+    margin-right: 4vw;
+    color: #fff;
+    transition: all .3s;
+    font-weight: bold;
+}
+
+.create-section-title {
+    font-size: 2rem;
+}
+
+.title-label,
+.note-label {
+    font-size: .8rem;
+    display: block;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+.title {
+    display: block;
+    margin:auto;
+    width: 90%;
+    height: 5vh;
+}
+
+#note {
+    width: 90%;
+    height: 20vh;
+}
+
+.submit-btn {
+    width: 92%;
+    border: none;
+    background-color: rgb(99, 98, 98);
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    height: 6vh;
+    margin-top: 3vh;
+    transition: all .3s;
+}
+
+.note-card {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6vh;
+    border-left: 1px rgb(231, 231, 231) solid;
+    border-right: 1px rgb(231,231,231) solid;
+}
+
+.notes-container {
+    margin-top: 5vh;
+}
+
+.note-title {
+    background-color: rgb(231, 231, 231);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin: 0;
+}
+
+.note-detail {
+    height: 30vh;
+    background-color: #fff;
+    margin: 0;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.card-buttons-container {
+    background-color:rgb(231, 231, 231);
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 1.5vh;
+    border: none;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: rgb(204, 4, 4);
+}
+
+.edit-btn {
+    background-color: rgb(26, 26, 248);
+}
+
+
+@media screen and (min-width: 480px) {
+    .submit-btn {
+        width: 91.5%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .notes-container {
+        display:flex;
+        flex-wrap: wrap;
+        width: 91%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+
+    .note-card {
+        width: 46.5%;
+        margin-left: 0;
+        margin-right: 0;
+        /* width: 42%; */
+    }
+
+    .submit-btn {
+        width: 91%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .create-section-title {
+        font-size: 3rem;
+    }
+    .title-label,
+    .note-label {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .notes-container {
+        width: 91%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content:flex-start;
+    }
+    
+    .note-card {
+        width: 32%;
+    }
+
+    .note-card:nth-of-type(3n+2) {
+        margin-left: 1.65%;
+        margin-right: 1.65%;
+    }
+
+    .note-detail {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .title-label,
+    .note-label {
+        font-size: 1.3rem;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    #note {
+        font-size: 20px;
+    }
+
+    .submit-btn {
+        font-size: 20px;
+    }
+
+    .note-detail {
+        font-size: 18px;
+    }
+
+    .note-title {
+        font-size: 24px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        padding: 1.7vh;
+        border: none;
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .note-card:nth-of-type(3n+2) {
+        margin-left: 1.7%;
+        margin-right: 1.7%;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+    .navigation {
+        height: 9vh;
+    }
+    .create-section-title {
+        font-size: 4rem; 
+    }
+
+    .title-label,
+    .note-label {
+        font-size: 1.7rem;
+    }
+
+    .submit-btn {
+        font-size: 30px;
+        width: 90.5%;
+        height: 8vh;
+    }
+    
+    .signout-btn {
+        padding: 2vh;
+        font-size: 20px;
+    }
+
+    .note-detail {
+        font-size: 24px;
+    }
+
+    .note-title {
+        font-size: 30px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        font-size: 22px;
+    }
+}
+
+
+
+/*animation*/
+
+.signout-btn:hover {
+    background-color: #811919
+}
+
+.submit-btn:hover {
+    background-color: #000;
+}
